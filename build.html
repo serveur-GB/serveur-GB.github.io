@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&B Build de serveur</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a980e88be8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<!-- Header -->
+<header>
+    <div class="menu">
+        <img src="images/menu.png" class="menu_icons">
+        <ul>
+            <li><a href="index.html">Page Home</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="montage.html">Montage Vidéo</a></li>
+            <li><a href="cinema.html">G&B Cinema</a></li>
+        </ul>
+    </div>
+    <img src="imagesgb/image.png" class="logo">  
+    <div class="header-end">
+        <i class="fa-solid fa-location-dot"></i>
+        <i class="fa-solid fa-crown"></i>
+        <label for="text-input">Entrez du texte :</label>
+    <input type="text" id="text-input" placeholder="Tapez ici">
+
+    <button onclick="rediriger()">Valider</button>
+
+    <script>
+        function rediriger() {
+            // Récupérer la valeur du champ texte
+            var texte = document.getElementById("text-input").value;
+
+            // Vérifier si le champ n'est pas vide
+            if (texte.trim() !== "") {
+                // Rediriger vers une page en fonction du texte (remplacez "page1.html" par le chemin de votre page)
+                window.location.href = texte + ".html"; // Exemple : si vous tapez "exemple", cela redirigera vers "exemple.html"
+            } else {
+                alert("Veuillez entrer du texte avant de valider.");
+            }
+        }
+    </script>
+</header>
+<section class="foods">
+    <h1>Build de serveur</h1>
+    <p>Rejoignez notre Discord pour en savoir plus</p>
+    <div class="foods-list">
+        <div class="box">
+            <img src="imagesgb/constru_serveurs.jpg">
+            <h3>Totalement gratuit</h3>
+        </div>
+        <div class="box">
+            <img src="imagesgb/Untitled_Project_75.jpg">
+            <h3>s.t a trouver</h3>
+        </div>
+        <div class="box">
+            <img src="imagesgb/avis.png">
+            <h3>Avis concernant ce pôle</h3>
+        </div>
+    </div>
+</section>
+</body>

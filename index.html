@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&B | French Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="fontawesome-free-6.5.1-web/css/all.css">
+    <script src="https://kit.fontawesome.com/a980e88be8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="menu">
+            <img src="images/menu.png" class="menu_icons">
+            <ul>
+                <li><a href="design.html">Pôle Design</a></li>
+                <li><a href="montage.html">Montage vidéo</a></li>
+                <li><a href="build.html">Build de serveur</a></li>
+                <li><a href="cinema.html">G&B Cinema</a></li>
+            </ul>
+        </div>
+        <img src="imagesgb/image.png" class="logo">  
+        <div class="header-end">
+            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-crown"></i>
+            <label for="text-input">Entrez du texte :</label>
+    <input type="text" id="text-input" placeholder="Tapez ici">
+
+    <button onclick="rediriger()">Valider</button>
+
+    <script>
+        function rediriger() {
+            // Récupérer la valeur du champ texte
+            var texte = document.getElementById("text-input").value;
+
+            // Vérifier si le champ n'est pas vide
+            if (texte.trim() !== "") {
+                // Rediriger vers une page en fonction du texte (remplacez "page1.html" par le chemin de votre page)
+                window.location.href = texte + ".html"; // Exemple : si vous tapez "exemple", cela redirigera vers "exemple.html"
+            } else {
+                alert("Veuillez entrer du texte avant de valider.");
+            }
+        }
+    </script>
+    </header>
+    <!-- Header fin -->
+
+    <!-- home -->
+    <section class="home">
+        <button onclick="redirigerVersDiscord()">Notre Discord</button>
+
+    <script>
+        function redirigerVersDiscord() {
+            // Rediriger vers le lien d'invitation Discord (remplacez "VOTRE-LIEN-D'INVITATION" par le lien réel)
+            window.location.href = "https://discord.gg/frenchdesigner";
+        }
+    </script>
+    </section>
+
+    <!-- home fin -->
+
+    <!--  Abonnement-->
+    <section class="fidelity_prog">
+        
+        <div class="div1">
+            <img src="imagesgb/giveaway1.png">
+            <button onclick="redirigerVersDiscord()">Nos résaux</button>
+
+    <script>
+        function redirigerVersDiscord() {
+            // Rediriger vers le lien d'invitation Discord (remplacez "VOTRE-LIEN-D'INVITATION" par le lien réel)
+            window.location.href = "https://linktr.ee/gb_french_designer";
+        }
+    </script>
+        </div>
+        <div class="div2">
+            <img src="imagesgb/abo.png">
+        </div>
+        <div class="div3">
+            <img src="imagesgb/don.png">
+        </div>
+    </section>
+    <!-- fin abonnement -->
+
+    <!-- Montage -->
+
+    <!-- <section class="Montage">
+        <h1>une petie faim</h1>
+        <div class="little-food_box">
+            <div class="box">
+                <h3>king</h3>
+                <img src="vidéo/intro_ytb_SB_24fps_version_finale.mov">
+            </div>
+            <div class="box">
+                <h3>king</h3>
+                <img src="images/img10.webp">
+            </div>
+            <div class="box">
+                <h3>king</h3>
+                <img src="images/img11.webp">
+            </div>
+            <div class="box">
+                <h3>king</h3>
+                <img src="images/img12.webp">
+            </div>    
+        </div>
+    </section> -->
+
+    <!-- fin little food -->
+</body>
+</html>
+
+<footer>
+    <p>&copy; Contactez-nous via discord</p>
+    <div class="social-media">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-twitter"></i></p> 
+      <p><i class="fab fa-instagram"></i></p>
+    </div>
+  </footer>
+  <!-- Fin du pied de page -->
+</body>
+</html>

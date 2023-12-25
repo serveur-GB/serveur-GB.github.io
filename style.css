@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    z-index: 160;
+}
+.menu_icons{
+    width: 35px;
+    cursor: pointer;
+}
+.logo{
+    width: 100px;
+    margin-left: -10px;
+}
+button img{
+    width: 20px;
+    margin-left: 10px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu ul{
+    margin-left: 25px;
+    display: flex;
+    list-style: none;
+}
+.menu ul a{
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #000;
+    text-decoration: 0;
+    position: relative;
+}
+.menu ul a::after{
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f7a800;
+    transition: 0.1s ease-out;
+}
+.menu ul a:hover::after{
+    width: 100px;
+}
+.header-end{
+    display: flex;
+    align-items: center;
+}
+.header-end i {
+    margin-right: 20px;
+}
+button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 0px 15 px;
+    background-color: #bb2337;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+}
+button span{
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+button:hover{
+    transform: scale(1.06);
+}
+/* home */
+.home{
+    margin-top: 80px;
+    background: url('imagesgb/gb_d_6.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(120vh - 200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
+.home2{
+    margin-top: 80px;
+    background: url('imagesgb/GB_french_cinema.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(120vh - 200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}    
+/* foods */
+
+.foods{
+    margin: 50px;
+    padding: 0 10px;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+}
+.foods p{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.foods-list{
+    display: flex;
+    justify-content: space-between;
+}
+.foods-list img{
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.foods-list video{
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+    width: 350px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.foods-list .box{
+    transition: 0.5 ease-out;
+    cursor: pointer;
+}
+.foods-list .box:hover{
+    transform: scale(1.05);
+}
+
+/* fidelité */
+.fidelity_prog{
+    margin: 35px 0;
+    height: 350px;
+    width: 100%;
+    background: url(images/img8.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.fidelity_prog div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fidelity_prog button{
+    margin-top: 25px;
+    background-color: #f7a800;
+}
+.fidelity_prog .div1{
+    width: 300px;
+}
+.fidelity_prog .div2{
+    width: 350px;
+    margin-top: 25px;
+}
+.fidelity_prog .div3{
+    width: 410px;
+}
+.fidelity_prog img{
+    width: 100%;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  footer .social-media{
+    display: flex;
+  }
+  footer .social-media p{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align:center;
+    width: 20px;
+    cursor:pointer;
+  }
+  /* Fin du pied de page */
+  
+  @media screen and (max-width: 640px){
+    nav .onglets .link, nav h1{
+      display:none;
+    }
+    .cards .card img{
+      width: 300px;
+    }
+  }
