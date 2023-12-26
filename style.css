@@ -5,9 +5,8 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-#menu{
-    width: 100%; /* largeur de la page 1200px */
-  
+html {
+    scroll-behavior: smooth;
 }
 header{
     position: fixed;
@@ -168,7 +167,7 @@ h3{
     margin: 35px 0;
     height: 350px;
     width: 100%;
-    background: url(imagesgb/image0.jpg);
+    background: url(imagesgb/image8.jpg);
     background-position: center;
     background-size: cover;
     padding: 20px 10%;
